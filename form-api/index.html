@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>form</title>
+		<style>
+			body {
+				background-color: #e0e0ff;
+			}
+			.form-container {
+				padding: 10px;
+				background-color: white;
+			}
+			.ui input {
+				height: 40px;
+			}
+			.ui button {
+				height: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>テストページ</h1>
+		<div class="ui">
+			親ページの値
+			<input id="text-userid" type="text" value="LIFF!! LIFF!!"></input>
+			<button id="button-userid">値を設定！</button>
+		</div>
+		<hr />
+		<div class="form-container">
+			<script defer src="https://form.xdata.jp/form.js?site_id=500372&form_id=268"></script> <div id="xhm-form"></div>
+		</div>
+
+
+		<script>
+			window.xhmForm = function(target, form) {
+				if (target == 'xhm-form') {
+					var button = document.getElementById('button-userid');
+					button.onclick = function() {
+						var text = document.getElementById('text-userid');
+						// console.log('xxxxxxxxxxx!', text.value);
+						form.send({
+							userid: text.value,
+						});
+					};
+				}
+			}
+		</script>
+	</body>
+</html>
