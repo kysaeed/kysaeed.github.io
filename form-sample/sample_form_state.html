@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>フォーム完了を取得する</title>
+	</head>
+	<body>
+		<div>
+			<h1>フォーム完了を取得するサンプル</h1>
+			<div>
+				<button type="button" onclick="showFormState();">フォーム完了状態の取得</button>
+			</div>
+			<div id="my-form-container" style="min-height: 300px; border: solid 2px black;margin: 0px 80px;">
+				<script defer="" src="https://form.xdata.jp/form.js?site_id=000122&amp;form_id=54"></script><div id="xhm-form"></div>
+			</div>
+		</div>
+	</body>
+	<script>
+		// ボタンを押した時にアラートでフォームの回答が完了しているか表示します。
+		function showFormState() {
+			if (window.xhmFormState['xhm-form'].isCompleted) { 	// window.xhmFormState[フォームのdivタグのid].isCompletedでフォームが完了しているかを取得できます
+				// 回答が完了している場合
+				alert('フォームの状態： 完了した');
+			} else {
+				// 未完了の場合
+				alert('フォームの状態： 未完了');
+			}
+		};
+
+		// 以下のように書いておくと、完了した瞬間に実行できます
+		window.xhmFormEvent = (id, event) => {
+			if (id === 'xhm-form') {	// 画面に複数のフォームがある場合に、どれが完了したかチェックする方法。 フォームが１つだけなら省略できます
+				if (event === 'complete') { // 完了したとき（現状それ以外ないですが、一応ほかの場合に対応するために追加お願いします）
+					// div my-elemのフォームが完了したときに実行される
+					alert('フォームのdivをリサイズします');
+					var div = document.getElementById('my-form-container');	// このdivがフォームを表示している外枠(ポップアップとか)
+					div.style.height = '300px';	// デフォルトの高さに戻す
+				}
+			}
+		};
+	</script>
+</html>
