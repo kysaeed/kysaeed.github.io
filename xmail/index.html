@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.xdata.jp/report/measurementMail/output/0000010302/2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                
+        <link rel="stylesheet" type="text/css" href="./datas/bootstrap.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" href="./datas/datepicker.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" href="./datas/perfect-scrollbar-0.4.10.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" href="./datas/app.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" href="./datas/home.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        
+<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css; charset=UTF-8">
+        <meta name="title" content="XD.COMMERCE | コミュニケーション | メールの設定">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="XD.COMMERCE">
+<meta name="keywords" content="XD.COMMERCE">
+<meta name="language" content="ja">
+<meta name="copyright" content="(C) Tribeck Inc. Allrights reserved.">
+        <title>XD.COMMERCE | コミュニケーション | メールの設定</title>
+                <link rel="shortcut icon" href="https://www.xdata.jp/assets/favicon/favicon.ico">
+        <link rel="icon" type="image/png" href="https://www.xdata.jp/assets/favicon/favicon.png">
+        <link rel="icon" type="image/svg+MXl" href="https://www.xdata.jp/assets/favicon/favicon.svg">
+        <link rel="icon" type="image/png" sizes="192x192" href="https://www.xdata.jp/assets/icons/icon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.xdata.jp/assets/icons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="https://www.xdata.jp/assets/icons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://www.xdata.jp/assets/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://www.xdata.jp/assets/icons/apple-touch-icon-120x120.png">
+        <meta name="msapplication-square310x310logo" content="/assets/icons/icon-310x310.png">
+        <meta name="msapplication-wide310x150logo" content="/assets/icons/icon-310x150.png">
+        <meta name="msapplication-square150x150logo" content="/assets/icons/icon-150x150.png">
+        <meta name="msapplication-square70x70logo" content="/assets/icons/icon-70x70.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="./datas/split-pane.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/codemirror.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/foldgutter.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/simplescrollbars.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/policy.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/policy-add.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/preset_modal.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/jquery.contextMenu.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/additional.xdata.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./datas/additional.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+<link href="css/app.css?v29291222" rel="stylesheet" type="text/css">
+</head>
+    <body class="" style="position: relative;">
+        <input type="hidden" id="site_id" value="500372">
+                <div class="navbar navbar-xdata navbar-fixed-top xrossdata" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".burger">
+                        <span class="sr-only">Toggle</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="https://www.xdata.jp/report/home" class="navbar-brand"><img src="./datas/xrossdata-logo.png" alt="XD.COMMERCE"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="main-menu an"><a id="mainmenu_analytics" href="https://www.xdata.jp/report/reportAnalysisDashBoard" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;アナリティクス&lt;/span&gt;"></a></li>
+                        <li class="main-menu cm on menu-active"><a id="mainmenu_communication" href="https://www.xdata.jp/report/measurementMail" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;コミュニケーション&lt;/span&gt;"></a></li>
+                        <li class="main-menu fm"><a id="mainmenu_form" href="https://www.xdata.jp/form" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;フォーム&lt;/span&gt;"></a></li>
+                        <li class="main-menu ls"><a id="mainmenu_storage" href="https://www.xdata.jp/report/storage/index" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;ログストレージ&lt;/span&gt;"></a></li>
+                        <li class="main-menu lc"><a id="mainmenu_log" href="https://www.xdata.jp/report/log" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;ログチェック&lt;/span&gt;"></a></li>
+                        <li class="main-menu st"><a id="mainmenu_setting" href="https://www.xdata.jp/report/setting" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;設定&lt;/span&gt;"></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="login">500372 - 岸川 大輔<br>d-kishikawa@tribeck.jp</li>
+                        <li><a id="bargermenu" href="https://www.xdata.jp/report/measurementMail/output/0000010302/2#" class="icon icon-setting">設定</a>
+                        <div class="panel panel-default menu">
+                            <div class="inner">
+                                <span class="cap"></span>
+                                <a id="bargermenu_password" href="https://www.xdata.jp/report/settingPassword">パスワード設定</a>
+                                <a target="_helpcenter" rel="noopener noreferrer" id="bargermenu_helpcenter" href="https://www.xdata.jp/helpcenter">ヘルプセンター</a>
+                                <hr>
+                                <a id="bargermenu_logout" href="https://www.xdata.jp/report/logout" class="logout">ログアウト</a>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            </div>
+<style type="text/css">
+#condition.panel-body {
+  padding: 0px;
+}
+#modal_popup .modal-footer {
+    margin-top: 15px;
+    padding: 19px 20px 20px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+</style>
+<div id="mail_output">
+<!-- segment-header -->
+    <div class="row-set">
+      <div class="row policy-header policy-setting-header">
+        <div class="col-md-10">
+        <ul>
+          <li class=""><a id="header_segment" href="https://www.xdata.jp/report/measurementMail/segment/0000010302"><span>1</span>セグメントの設定</a></li>
+          <div class="next"></div>
+          <li class="active"><a id="header_message" href="https://www.xdata.jp/report/measurementMail/mail/0000010302"><span>2</span>メールの設定</a></li>
+          <div class="next"></div>
+          <li class=""><a id="header_schedule" href="https://www.xdata.jp/report/measurementMail/schedule/0000010302"><span>3</span>配信スケジュールの設定</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2">
+          <a class="btn btn-primary cancel-btn" href="https://www.xdata.jp/report/measurementMail/list">キャンセル</a>
+        </div>
+      </div>
+    </div>
+
+    <input type="hidden" id="token" value="19a31245e8f23e70924c8b3b79b035f41ec8a33daeeeb07b7fb0a79e3ce69875">
+    <input type="hidden" id="schedule_id" value="0000010302">
+    <input type="hidden" id="contents_id" value="2">
+    <input type="hidden" id="output_type" value="mail">
+<input type="hidden" id="mail_template_id" value="">
+
+<!-- メッセージ -->
+<div class="policy-message">
+  <!-- 成功 -->
+  <div class="panel-body success" style="opacity: 0; display: none;">
+  </div>
+  <!-- エラー -->
+  <div class="panel-body error" style="opacity: 0; display: none;">
+  </div>
+</div>
+
+<div class="split-pane-frame" style="height: 1039px;">
+<div class="setting-main editor-height split-pane fixed-left" style="min-width: 1100px;">
+    <div id="app" style="position: relative; margin-top: 120px;">
+        <div>
+              <ckeditor-component>
+                <h1>しばらくお待ち下さい.....</h1>
+              </ckeditor-component>
+        </div>
+      </div>
+    </div>
+    <div class="split-pane-divider" style="left: 849.667px;"><div class="split-pane-divider-inner"></div></div>
+    
+    <div class="split-pane-resize-shim" style="display: none;"></div>
+  </div>
+</div>
+<script id="template_preview" type="text/x-jsrender" data-jsv-tmpl="jsvTmpl">
+<iframe id="iframe-preview" data-link="srcdoc{replaceKeyword:built_contents}" class="pcst"></iframe>
+</script>
+<script type="text/javascript">
+var __mail_type = 'html';
+</script>
+<script type="text/javascript">
+var __contextMenu = {"group_0000010001":{"name":"\u9867\u5ba2\u5c5e\u6027","items":{"___birth_dt___":{"name":"\u751f\u5e74\u6708\u65e5"},"___maternity_flg___":{"name":"\u30de\u30bf\u30cb\u30c6\u30a3\u30d5\u30e9\u30b0"},"___prefectural___":{"name":"\u90fd\u9053\u5e9c\u770c"},"___rank___":{"name":"\u9867\u5ba2\u30e9\u30f3\u30af"},"___sex___":{"name":"\u6027\u5225"},"___uriage___":{"name":"\u7dcf\u58f2\u4e0a"}}},"group_1000000001":{"name":"\u500b\u4eba\u60c5\u5831","items":{"___customer_id___":{"name":"\u9867\u5ba2ID"},"___address___":{"name":"\u4f4f\u6240"},"___address2___":{"name":"address2"},"___adress2___":{"name":"adress2"},"___first_name___":{"name":"\u540d"},"___last_name___":{"name":"\u59d3"},"___line_send_flag___":{"name":"LINE\u9001\u4fe1\u30d5\u30e9\u30b0"},"___mail_address___":{"name":"\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9"},"___mail_send_flag___":{"name":"\u30e1\u30fc\u30eb\u9001\u4fe1\u30d5\u30e9\u30b0"},"___sms_send_flag___":{"name":"SMS\u9001\u4fe1\u30d5\u30e9\u30b0"},"___webpush_send_flag___":{"name":"WEB\u30d7\u30c3\u30b7\u30e5\u9001\u4fe1\u30d5\u30e9\u30b0"},"___zipcode___":{"name":"\u90f5\u4fbf\u756a\u53f7"}}},"group_default":{"name":"\u8a08\u6e2c\u30d1\u30e9\u30e1\u30fc\u30bf","items":{"___xmail___":{"name":"\u8a08\u6e2c\u30d1\u30e9\u30e1\u30fc\u30bf"}}},"group_ranking":{"name":"\u30e9\u30f3\u30ad\u30f3\u30b0","items":{"___RANKING.pid(n)___":{"name":"\u5546\u54c1ID"},"___RANKING.p_name(n)___":{"name":"\u5546\u54c1\u540d"},"___RANKING.p_price(n)___":{"name":"\u5546\u54c1\u5358\u4fa1"},"___RANKING.ctgid(n)___":{"name":"\u30d6\u30e9\u30f3\u30c9\u30b3\u30fc\u30c9"},"___RANKING.ctg_name(n)___":{"name":"\u30d6\u30e9\u30f3\u30c9\u540d"},"___RANKING.sku(n)___":{"name":"SKU"},"___RANKING.p_num(n)___":{"name":"\u5546\u54c1\u70b9\u6570"},"___RANKING.view_url(n)___":{"name":"\u5546\u54c1\u8a73\u7d30\u30da\u30fc\u30b8URL"},"___RANKING.p_img_url(n)___":{"name":"\u5546\u54c1\u753b\u50cfURL"},"___RANKING.p_list_price(n)___":{"name":"\u5b9a\u4fa1"},"___RANKING.p_pop(n)___":{"name":"\u898b\u51fa\u3057"},"___RANKING.p_copy(n)___":{"name":"\u5546\u54c1\u7d39\u4ecb\u30b3\u30d4\u30fc"},"___RANKING.top_ctgid(n)___":{"name":"\u5927\u30ab\u30c6\u30b4\u30eaID"},"___RANKING.top_ctg_name(n)___":{"name":"\u5927\u30ab\u30c6\u30b4\u30ea\u540d"},"___RANKING.middle_ctgid(n)___":{"name":"\u4e2d\u30ab\u30c6\u30b4\u30eaID"},"___RANKING.middle_ctg_name(n)___":{"name":"\u4e2d\u30ab\u30c6\u30b4\u30ea\u540d"},"___RANKING.sale_start_dt(n)___":{"name":"\u8ca9\u58f2\u958b\u59cb\u65e5"},"___RANKING.sale_end_dt(n)___":{"name":"\u8ca9\u58f2\u7d42\u4e86\u65e5"},"___RANKING.p_status(n)___":{"name":"\u30b9\u30c6\u30fc\u30bf\u30b9"},"___RANKING.stock_quantity(n)___":{"name":"\u5728\u5eab\u6570"},"___RANKING.aaaa(n)___":{"name":"\uff21\uff21\uff21\uff21"},"___RANKING.alt_figure(n)___":{"name":"\u4e88\u5099\u6570\u5024"},"___RANKING.brand(n)___":{"name":"\u30d6\u30e9\u30f3\u30c9"},"___RANKING.p_colovari_url_1(n)___":{"name":"\u30ab\u30e9\u30fc\u30d0\u30ea\u30a8\u30fc\u30b7\u30e7\u30f3\u753b\u50cfURL1"},"___RANKING.p_colovari_url_2(n)___":{"name":"\u30ab\u30e9\u30fc\u30d0\u30ea\u30a8\u30fc\u30b7\u30e7\u30f3\u753b\u50cfURL2"},"___RANKING.p_colovari_url_3(n)___":{"name":"\u30ab\u30e9\u30fc\u30d0\u30ea\u30a8\u30fc\u30b7\u30e7\u30f3\u753b\u50cfURL3"},"___RANKING.p_colovari_url_4(n)___":{"name":"\u30ab\u30e9\u30fc\u30d0\u30ea\u30a8\u30fc\u30b7\u30e7\u30f3\u753b\u50cfURL4"},"___RANKING.p_colovari_url_5(n)___":{"name":"\u30ab\u30e9\u30fc\u30d0\u30ea\u30a8\u30fc\u30b7\u30e7\u30f3\u753b\u50cfURL5"},"___RANKING.p_core_flag(n)___":{"name":"\u4ee3\u8868\u5546\u54c1\u30d5\u30e9\u30b0"},"___RANKING.p_img_url_2(n)___":{"name":"\u753b\u50cfURL2"},"___RANKING.p_img_url_3(n)___":{"name":"\u753b\u50cfURL3"},"___RANKING.p_img_url_4(n)___":{"name":"\u753b\u50cfURL4"},"___RANKING.p_open_flag(n)___":{"name":"\u516c\u958b\u30d5\u30e9\u30b0"},"___RANKING.p_sale_rate(n)___":{"name":"\u5272\u5f15\u7387"},"___RANKING.sale_price(n)___":{"name":"\u30bb\u30fc\u30eb\u91d1\u984d"},"___RANKING.third_ctgid(n)___":{"name":"\u30b5\u30fc\u30c9\u30ab\u30c6\u30b4\u30eaID"},"___RANKING.third_ctg_name(n)___":{"name":"\u30b5\u30fc\u30c9\u30ab\u30c6\u30b4\u30ea\u540d"},"___RANKING.url_2(n)___":{"name":"\u7279\u96c6\u30da\u30fc\u30b8URL"}}}};
+var __keywordReplacer = {"___customer_id___":"USER001","___address___":"\u6771\u4eac\u90fd\u6e2f\u533a\u8d64\u57427-1-1","___address_FORMAT___":"\u6771\u4eac\u90fd\u6e2f\u533a\u8d64\u57427-1-1","___address_JFORMAT___":"\u6771\u4eac\u90fd\u6e2f\u533a\u8d64\u57427-1-1","___address2___":"address2","___address2_FORMAT___":"address2","___address2_JFORMAT___":"address2","___adress2___":"adress2","___adress2_FORMAT___":"adress2","___adress2_JFORMAT___":"adress2","___birth_dt___":"20010101","___birth_dt_FORMAT___":"2001\/01\/01","___birth_dt_JFORMAT___":"2001\u5e7401\u670801\u65e5","___first_name___":"\u592a\u90ce","___first_name_FORMAT___":"\u592a\u90ce","___first_name_JFORMAT___":"\u592a\u90ce","___last_name___":"\u9583\u6728","___last_name_FORMAT___":"\u9583\u6728","___last_name_JFORMAT___":"\u9583\u6728","___line_id___":"LINEID001","___line_id_FORMAT___":"LINEID001","___line_id_JFORMAT___":"LINEID001","___line_send_flag___":"1","___line_send_flag_FORMAT___":"1","___line_send_flag_JFORMAT___":"1","___mail_address___":"mail@example.com","___mail_address_FORMAT___":"mail@example.com","___mail_address_JFORMAT___":"mail@example.com","___mail_send_flag___":"1","___mail_send_flag_FORMAT___":"1","___mail_send_flag_JFORMAT___":"1","___maternity_flg___":"\u30de\u30bf\u30cb\u30c6\u30a3\u30d5\u30e9\u30b0","___maternity_flg_FORMAT___":"\u30de\u30bf\u30cb\u30c6\u30a3\u30d5\u30e9\u30b0","___maternity_flg_JFORMAT___":"\u30de\u30bf\u30cb\u30c6\u30a3\u30d5\u30e9\u30b0","___prefectural___":"\u6771\u4eac\u90fd","___prefectural_FORMAT___":"\u6771\u4eac\u90fd","___prefectural_JFORMAT___":"\u6771\u4eac\u90fd","___rank___":"\u9867\u5ba2\u30e9\u30f3\u30af","___rank_FORMAT___":"\u9867\u5ba2\u30e9\u30f3\u30af","___rank_JFORMAT___":"\u9867\u5ba2\u30e9\u30f3\u30af","___sex___":"1","___sex_FORMAT___":"1","___sex_JFORMAT___":"1","___sms_send_flag___":"1","___sms_send_flag_FORMAT___":"1","___sms_send_flag_JFORMAT___":"1","___uriage___":"\u7dcf\u58f2\u4e0a","___uriage_FORMAT___":"\u7dcf\u58f2\u4e0a","___uriage_JFORMAT___":"\u7dcf\u58f2\u4e0a","___webpush_send_flag___":"1","___webpush_send_flag_FORMAT___":"1","___webpush_send_flag_JFORMAT___":"1","___zipcode___":"107-0052","___zipcode_FORMAT___":"107-0052","___zipcode_JFORMAT___":"107-0052"};
+const METHOD_ACTION = {"viewrank":{"name":"\u95b2\u89a7\u30e9\u30f3\u30ad\u30f3\u30b0","action":"view"},"cartinrank":{"name":"\u30ab\u30fc\u30c8\u6295\u5165\u30e9\u30f3\u30ad\u30f3\u30b0","action":"cartin"},"orderrank":{"name":"\u8cfc\u5165\u30e9\u30f3\u30ad\u30f3\u30b0","action":"order"},"abandonrank":{"name":"\u30ab\u30fc\u30c8\u653e\u68c4\u30e9\u30f3\u30ad\u30f3\u30b0","action":"cartin"},"__hr__":null,"bascket":{"name":"\u30d0\u30b9\u30b1\u30c3\u30c8\u5206\u6790","action":"order"},"sequence":{"name":"\u30b7\u30fc\u30b1\u30f3\u30b9\u5206\u6790","action":"order"},"favorite":{"name":"\u8208\u5473\u95a2\u5fc3\u5206\u6790","action":"view"},"compare":{"name":"\u6bd4\u8f03\u8cfc\u5165\u5206\u6790","action":"order"}};
+</script>
+<script id="template_ranking" type="text/x-jsrender" data-jsv-tmpl="jsvTmpl">
+    <div class="main-title">
+      ランキング差し込み
+    </div>
+    <div class="setting-set">
+      <div class="form-inline">
+        <div class="form-group">
+          <input type="checkbox" id="ranking_flag" name="ranking_flag" value="1" data-link="{preCheckbox:ranking_flag:postCheckbox}">
+        </div>
+        <div class="form-group">
+          <p class="form-control-static"><label class="checkbox" for="ranking_flag" style="font-weight: normal;">ランキングの差し込みを使用する</label></p>
+        </div>
+      </div>
+    </div>
+    <div class="setting-set" data-link="visible{:ranking_flag === '1'}">
+      <div>
+          <div id="ranking_method" class="btn-group" data-link="class{merge:error^attribute^ranking_method toggle='has-error'}">
+            <div class="has-error">
+                <span class="control-label" data-link="error^attribute^ranking_method"></span>
+            </div>
+            <button class="btn btn-default form-control" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="control-label" data-link="{:~buildTitleFromList(ranking_method, 'ranking_method')}"></span> <span class="caret" data-link="visible{:contents_id != '0'}"></span>
+            </button>
+            <ul class="dropdown-menu" name="ranking_method">
+              <li><a href="#" value="view">閲覧</a></li>
+              <li><a href="#" value="order_price">売上金額</a></li>
+              <li><a href="#" value="order_count">販売個数</a></li>
+            </ul>
+          </div>
+          の
+          <div id="ranking_term" class="btn-group" data-link="class{merge:error^attribute^ranking_term toggle='has-error'}">
+            <div class="has-error">
+                <span class="control-label" data-link="error^attribute^ranking_term"></span>
+            </div>
+            <button class="btn btn-default form-control" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="control-label" data-link="{:~buildTitleFromList(ranking_term, 'ranking_term')}"></span> <span class="caret" data-link="visible{:contents_id != '0'}"></span>
+            </button>
+            <ul class="dropdown-menu" name="ranking_term">
+              <li><a href="#" value="daily">デイリー</a></li>
+              <li><a href="#" value="weekly">週間</a></li>
+              <li><a href="#" value="monthly">月間</a></li>
+            </ul>
+          </div>
+          ランキング
+          を差し込む。
+      </div>
+    <div class="setting-set">
+        <p class="b">▶商品のフィルタリング</p>
+      </div>
+      <div id="conditions" class="no_category">
+        <div id="condition" class="panel-body">
+          <div data-link="class{merge:error.condition toggle='has-error'}">
+            <span class="control-label" data-link="error.condition"></span>
+          </div>
+          <ul class="conditions no-ls ddconnects has_ddconnects">
+              {{include tmpl="#template_condition_row"/}}
+          </ul>
+        </div>
+      </div>
+    </div>
+</script>
+<script id="template_condition_row" type="text/x-jsrender" data-jsv-tmpl="jsvTmpl">
+{^{for condition^condition ~cond=condition ~options=condition.options()}}
+            <li class="condition row draggable">
+                {^{include tmpl="#template_condition_category"/}}
+                {^{if category != null && category != '' tmpl="#template_condition_key"/}}
+                {^{if key != null && key != '' tmpl="#template_condition_subform" ~condition=#data ~condition_index=#index/}}
+                <div class="condition-item marker remove_condition " data-link="visible{:~cond.add_condition === undefined || ~cond.add_condition != false} display{:~cond.add_condition === undefined || ~cond.add_condition != false}">
+                    <a class="row-marker remove action search_condition_remove" href="#">×</a>
+                </div>
+            </li>
+{{/for}}
+            <li class="condition row" data-link="visible{:condition^add_condition === undefined || condition^add_condition != false} display{:condition^add_condition === undefined || condition^add_condition != false}">
+                <div class="condition-item">
+                    <a id="add_condition" href="#" class="row-marker add action action_add">＋</a><span data-link="{:condition^add_button_title}"></span>
+                </div>
+            </li>
+</script>
+
+<script id="template_condition_subform" type="text/x-jsrender">
+{^{if key == null || key == '' || !~options[category] || !~options[category][key]}}
+{{else}}
+    {^{if ~options[category][key].type == 'text' tmpl="#template_condition_text"}}
+    {{else ~options[category][key].type == 'duration' tmpl="#template_condition_duration"}}
+    {{else ~options[category][key].type == 'number' tmpl="#template_condition_number"}}
+    {{else ~options[category][key].type == 'select' tmpl="#template_condition_select"}}
+    {{else ~options[category][key].type == 'checklist' tmpl="#template_condition_checklist"}}
+    {{else ~options[category][key].type == 'selecttext' tmpl="#template_condition_selecttext"}}
+    {{else ~options[category][key].type == 'days' tmpl="#template_condition_number"}}
+    {{else ~options[category][key].type == 'personal' tmpl="#template_condition_personal"}}
+    {{/if}}
+{{/if}}
+</script>
+<script id="template_condition_category" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown condition_category" data-link="class{merge:error.category toggle='has-error'}">
+            <span class="control-label" data-link="error.category"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~options[category] && ~options[category].title ? ~options[category].title : (category ? category : '選択してください')}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="category">
+{^{props ~options}}
+    {^{if prop^search_display_flag == '0' || key == 'search_display_flag'}}
+    {{else key.indexOf('__hr__') == 0 ~index=#index}}
+        {^{if ~index > 0}}
+                <li role="presentation" class="divider"></li>
+        {{/if}}
+        {^{if prop != null && prop.name != null && prop.name != ''}}
+                <li role="presentation" class="dropdown-header">{{>prop.name}}</li>
+        {{/if}}
+    {{else}}
+                <li><a href="#" value="{{>key}}">{{>prop.title ? prop.title : key}}</a></li>
+    {{/if}}
+{{/props}}
+            </ul>
+        </div>
+</script>
+<script id="template_condition_key" type="text/x-jsrender">
+{^{if !category || category == ""}}
+{{else category == "条件グループ"}}
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.selected toggle='has-error'}">
+            <span class="control-label" data-link="error.selected"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^selected, ~options[category]['__nokey_group'].options)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="selected">
+{^{props ~options[category]['__nokey_group'].options}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+{{else category != "条件グループ" && ~options[category]}}
+        <div class="condition-item btn-group dropdown condition_key" data-link="class{merge:error.key toggle='has-error'}">
+            <span class="control-label" data-link="error.key"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~options[category][key] ? ~key_name_callback(~options[category][key].title ? ~options[category][key].title : ~options[category][key].name) : (~cond.unselected_title ? ~cond.unselected_title : '選択してください')}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="key">
+{^{if ~cond.default_key}}
+                <li><a href="#" value="" data-link="{:~cond.default_key}"></a></li>
+    {^{if ~keys(~options[category]).length}}
+                <li role="presentation" class="divider"></li>
+    {{/if}}
+{{/if}}
+{^{props ~options[category]}}
+    {^{if key == 'search_display_flag'}}
+    {{else key.indexOf('__hr__') == 0 ~index=#index}}
+        {^{if ~index > 0}}
+                <li role="presentation" class="divider"></li>
+        {{/if}}
+        {^{if prop != null && prop.name != null && prop.name != ''}}
+                <li role="presentation" class="dropdown-header">{{>prop.name}}</li>
+        {{/if}}
+    {{else key != 'title'}}
+                <li><a href="#" value="{{>key}}">{{>~key_name_callback(prop.title ? prop.title : prop.name)}}</a></li>
+    {{/if}}
+{{/props}}
+            </ul>
+        </div>
+{{/if}}
+</script>
+<script id="template_condition_select" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown condition_select" data-link="class{merge:error.selected toggle='has-error'}">
+            <span class="control-label" data-link="error.selected"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^selected, ~options[category][key].options)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="selected">
+{^{props ~options[category][key].options}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+        {{include tmpl="#template_condition_notexists"/}}
+</script>
+<script id="template_condition_checklist" type="text/x-jsrender">
+        <div class="condition-item btn-group checklist condition_checklist" data-link="class{merge:error.selected toggle='has-error'}">
+            <span class="control-label" data-link="error.selected"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="html{:condition^selected.length ? ~buildTitle(condition^selected, ~options[category][key].options) : '選択してください'}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="selected">
+{^{props ~options[category][key].options}}
+    {^{if key.indexOf('__hr__') == 0 ~index=#index}}
+        {^{if ~index > 0}}
+                <li role="presentation" class="divider"></li>
+        {{/if}}
+        {^{if prop != null && prop.name != null && prop.name != ''}}
+                <li role="presentation" class="dropdown-header">{{>prop.name}}</li>
+        {{/if}}
+    {{else}}
+                <li><label class="checkbox" data-link="for{:~condition_index + ~condition^key + key}"><input type="checkbox" value="{{>key}}" data-link="{:~condition^condition^selected.length ? ~isChecked(key, ~condition^condition^selected) : false} id{:~condition_index + ~condition^key + key}">
+        {^{if ~isPlainObject(prop)}}
+                    <span class="text"><span data-link="class{merge:'public_flag' + prop.public_flag}"></span><span data-link="{:prop.custom_segment_name} title{:prop.description}" rel="tooltip" data-placement="bottom"></span></span><span class="uname">（<span data-link="{:prop.add_user_name}"></span>）</span>
+        {{else}}
+                    <span>{{>prop}}</span>
+        {{/if}}
+                </label></li>
+    {{/if}}
+{{/props}}
+                <li class="checklist-close"><a href="#">閉じる</a></li>
+            </ul>
+        </div>
+        {{include tmpl="#template_condition_notexists"/}}
+</script>
+<script id="template_condition_text" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown condition_text" data-link="class{merge:error.text toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.text"></span>
+            <input class="subform search_condition form-control" name="{{>key}}[text]" style="width: 250px;" type="text" data-link="{:condition^text:} class{merge:error.text toggle='has-error'}">
+        </div>
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.match toggle='has-error'}">
+            <span class="control-label" data-link="error.match"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^match, ~options[category][key].options)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="match">
+{^{props ~options[category][key].options}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+        {{include tmpl="#template_condition_notexists"/}}
+</script>
+<script id="template_condition_personal" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown condition_personal" data-link="class{merge:error.text toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.text"></span>
+            <input class="subform search_condition form-control" name="{{>key}}[text]" style="width: 250px;" type="text" data-link="{:condition^text:} class{merge:error.text toggle='has-error'}">
+        </div>
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.match toggle='has-error'}">
+            <span class="control-label" data-link="error.match"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^match, ~options[category][key].options)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="match">
+{^{props ~options[category][key].options}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+        {{include tmpl="#template_condition_notexists"/}}
+</script>
+<script id="template_condition_duration" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown xcalendar condition_duration" data-link="from{:condition^from} to{:condition^to} class{merge:error.duration toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.duration"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li class="calendar calendar-duration" data-link="class{merge:error.duration toggle='has-error'}"></li>
+                <li class="calendar-close"><a href="#">閉じる</a></li>
+            </ul>
+        </div>
+        {{include tmpl="#template_condition_notexists"/}}
+</script>
+<script id="template_condition_number" type="text/x-jsrender">
+{^{if ~options[category][key].prefix }}
+        <div class="condition-item btn-group">
+            <span data-link="~options[category][key].prefix"></span>
+        </div>
+{{/if}}
+        <div class="condition-item btn-group dropdown condition_number" data-link="class{merge:error.text toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.text"></span>
+            <input class="number subform search_condition shortest form-control" name="{{>key}}[text]" style="width: 100px;" type="text" placeholder="例) 12345" data-link="{:condition^text:} class{merge:error.text toggle='has-error'}">
+        </div>
+        <div class="condition-item btn-group" data-link="style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span data-link="~options[category][key].unit"></span>
+        </div>
+{^{if ~options[category][key].options != null}}
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.match toggle='has-error'}">
+            <span class="control-label" data-link="error.match"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^match, ~options[category][key].options)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="match">
+    {^{props ~options[category][key].options}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+    {{/props}}
+            </ul>
+        </div>
+{{/if}}
+        {{include tmpl="#template_condition_notexists"/}}
+</script>
+<script id="template_condition_selecttext" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown condition_selecttext" data-link="class{merge:error.selected toggle='has-error'}">
+            <span class="control-label" data-link="error.selected"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^selected, ~options[category][key].options, 'name')}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="selected">
+{^{props ~options[category][key].options}}
+                <li><a href="#" value="{{>key}}">{{>prop.name}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+{^{if ~findSearchType(condition^selected, ~options[category][key]) == 'text' tmpl="#template_search_type_text"}}
+{{else ~findSearchType(condition^selected, ~options[category][key]) == 'number' tmpl="#template_search_type_number"}}
+{{else ~findSearchType(condition^selected, ~options[category][key]) == 'days' tmpl="#template_search_type_days"}}
+{{else ~findSearchType(condition^selected, ~options[category][key]) == 'key_value' tmpl="#template_search_type_key_value"}}
+{{else ~findSearchType(condition^selected, ~options[category][key]) == 'checklist' tmpl="#template_search_type_checklist"}}
+{{else ~findSearchType(condition^selected, ~options[category][key]) == 'crypted_text' tmpl="#template_search_type_crypted_text"}}
+{{else ~findSearchType(condition^selected, ~options[category][key]) == 'crypted_checklist' tmpl="#template_search_type_crypted_checklist"}}
+{{/if}}
+        {{include tmpl="#template_condition_notexists"/}}
+</script>
+<script id="template_search_type_text" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown search_type_text" data-link="class{merge:error.text toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.text"></span>
+            <input class="subform search_condition form-control" name="{{>key}}[text]" style="width: 250px;" type="text" data-link="{:condition^text:} class{merge:error.text toggle='has-error'}">
+        </div>
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.match toggle='has-error'}">
+            <span class="control-label" data-link="error.match"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^match, ~options[category][key].matching_options.text)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="match">
+{^{props ~options[category][key].matching_options.text}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+</script>
+<script id="template_search_type_number" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown search_type_number" data-link="class{merge:error.text toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.text"></span>
+            <input class="number subform search_condition shortest form-control" name="{{>key}}[text]" style="width: 100px;" type="text" placeholder="例) 12345" data-link="{:condition^text:} class{merge:error.text toggle='has-error'}">
+        </div>
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.match toggle='has-error'}">
+            <span class="control-label" data-link="error.match"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^match, ~options[category][key].matching_options.number)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="match">
+{^{props ~options[category][key].matching_options.number}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+</script>
+<script id="template_search_type_days" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown search_type_days" data-link="class{merge:error.text toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.text"></span>
+            <input class="subform search_condition form-control" name="{{>key}}[text]" style="width: 150px;" type="text" placeholder="YYYYMMDD" data-link="{:condition^text:} class{merge:error.text toggle='has-error'}">
+        </div>
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.match toggle='has-error'}">
+            <span class="control-label" data-link="error.match"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^match, ~options[category][key].matching_options.days)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="match">
+{^{props ~options[category][key].matching_options.days}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+</script>
+<script id="template_search_type_key_value" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown search_type_key_value" data-link="class{merge:error.text toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.text"></span>
+            <input class="subform search_condition form-control" name="{{>key}}[text]" style="width: 250px;" type="text" data-link="{:condition^text:} class{merge:error.text toggle='has-error'}">
+        </div>
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.match toggle='has-error'}">
+            <span class="control-label" data-link="error.match"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^match, ~options[category][key].matching_options.key_value)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="match">
+{^{props ~options[category][key].matching_options.key_value}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+</script>
+<script id="template_search_type_checklist" type="text/x-jsrender">
+        <div class="condition-item btn-group checklist search_type_checklist" data-link="class{merge:error.text toggle='has-error'}">
+            <span class="control-label" data-link="error.text"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="html{:condition^checklist.length ? ~buildTitle(condition^checklist, ~options[category][key]^matching_options^checklist[condition^selected[0]]) : '選択してください'}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="checklist">
+{^{props ~options[category][key]^matching_options.checklist[condition^selected[0]]}}
+                <li><label class="checkbox" data-link="for{:~condition_index + ~condition^key + key}"><input type="checkbox" value="{{>key}}" data-link="{:~condition^condition^checklist.length ? ~isChecked(key, ~condition^condition^checklist) : false} id{:~condition_index + ~condition^key + key}"><span>{{>prop}}</span></label></li>
+{{/props}}
+                <li class="checklist-close"><a href="#">閉じる</a></li>
+            </ul>
+        </div>
+</script>
+<script id="template_search_type_crypted_text" type="text/x-jsrender">
+        <div class="condition-item btn-group dropdown search_type_text" data-link="class{merge:error.text toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.text"></span>
+            <input class="subform search_condition form-control" name="{{>key}}[text]" style="width: 250px;" type="text" data-link="{:condition^text:} class{merge:error.text toggle='has-error'}">
+        </div>
+        <div class="condition-item btn-group dropdown" data-link="class{merge:error.match toggle='has-error'}">
+            <span class="control-label" data-link="error.match"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitle(condition^match, ~options[category][key].matching_options.crypted_text)}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="match">
+{^{props ~options[category][key].matching_options.crypted_text}}
+                <li><a href="#" value="{{>key}}">{{>prop}}</a></li>
+{{/props}}
+            </ul>
+        </div>
+</script>
+<script id="template_search_type_crypted_checklist" type="text/x-jsrender">
+        <div class="condition-item btn-group checklist search_type_checklist" data-link="class{merge:error.text toggle='has-error'}">
+            <span class="control-label" data-link="error.text"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="html{:condition^checklist.length ? ~buildTitle(condition^checklist, ~options[category][key]^matching_options^crypted_checklist[condition^selected[0]]) : '選択してください'}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="checklist">
+{^{props ~options[category][key]^matching_options.crypted_checklist[condition^selected[0]]}}
+                <li><label class="checkbox" data-link="for{:~condition_index + ~condition^key + key}"><input type="checkbox" value="{{>key}}" data-link="{:~condition^condition^checklist.length ? ~isChecked(key, ~condition^condition^checklist) : false} id{:~condition_index + ~condition^key + key}"><span>{{>prop}}</span></label></li>
+{{/props}}
+                <li class="checklist-close"><a href="#">閉じる</a></li>
+            </ul>
+        </div>
+</script>
+<script id="template_condition_notexists" type="text/x-jsrender">
+{^{if ~options[category][key].not_exists == true}}
+        <div name="not_exists" class="condition-item btn-group dropdown" data-link="class{merge:error.not_exists toggle='has-error'} style{:condition^match != 'exist' && condition^match != 'not_exist' ? '' : 'display: none;'}">
+            <span class="control-label" data-link="error.not_exists"></span>
+            <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                <span class="title" data-link="{:~buildTitleFromList(condition^not_exists, 'not_exists')}"></span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollbar" role="menu" name="not_exists">
+                <li><a href="#" value="0">　</a></li>
+                <li><a href="#" value="1">以外</a></li>
+            </ul>
+        </div>
+{{/if}}
+</script>
+<div class="modal fade" id="modal_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+<script id="confirm_dialog" type="text/x-jsrender">
+      <div class="modal-header">
+        <button id="popup_cancel" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">分析方法の変更</h4>
+      </div>
+      <div class="modal-body">
+        <p>ランキングの種類を変更する場合、フィルタリング条件を一度削除する必要があります。</p>
+        <p>変更してよろしいですか？</p>
+      </div>
+      <div class="modal-footer">
+        <button id="popup_cancel" type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+        <button id="popup_submit" type="button" class="btn btn-primary">変更</button>
+      </div>
+</script>
+<script id="error_dialog" type="text/x-jsrender">
+      <div class="modal-header danger">
+        <button id="popup_cancel" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">入力エラーがあります</h4>
+      </div>
+      <div class="modal-body">
+{{props #data}}
+        <p>{{>prop}}</p>
+{{/props}}
+      </div>
+      <div class="modal-footer">
+        <button id="popup_submit" type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+      </div>
+</script>
+        </div><!-- container-fluid -->
+                <div class="help-box">
+            <div class="help-box-inner">
+                <ul>
+                    <li><a target="_helpcenter" rel="noopener noreferrer" href="https://www.xdata.jp/report/quickStart">クイックスタート</a></li>
+                    <li><a target="_helpcenter" rel="noopener noreferrer" href="https://www.xdata.jp/helpcenter/start_up_guide">スタートアップガイド</a></li>
+                    <li><a target="_helpcenter" rel="noopener noreferrer" href="https://www.xdata.jp/helpcenter">ヘルプセンター</a></li>
+                    <li><a target="_helpcenter" rel="noopener noreferrer" href="https://www.xdata.jp/terms/">利用規約</a></li>
+                    <li><a target="_helpcenter" rel="noopener noreferrer" href="https://www.xdata.jp/privacy-policy/">プライバシーポリシー</a></li>
+                    <li><a target="_helpcenter" rel="noopener noreferrer" href="https://www.xdata.jp/helpcenter/agreement/plan">ご利用料金</a></li>
+                </ul>
+            </div>
+        </div>
+        <script id="template_alert" type="text/x-jsrender">
+    <div class="alert alert-{{>type}}">
+      {{>message}}
+    </div>
+</script>
+                <script src="./datas/jquery.min.js.ダウンロード" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="./datas/jquery.easing.min.js.ダウンロード" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous"></script>
+        <script src="./datas/jquery-ui.min.js.ダウンロード" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+        <script src="./datas/bootstrap.min.js.ダウンロード" integrity="sha512-oBTprMeNEKCnqfuqKd6sbvFzmFQtlXS3e0C/RGFV0hD6QzhHV+ODfaQbAlmY6/q0ubbwlAM/nCJjkrgA3waLzg==" crossorigin="anonymous"></script>
+        <script src="./datas/moment.min.js.ダウンロード" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./datas/highcharts.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/highcharts-more.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/datepicker.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/jQueryRotateCompressed.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script src="./datas/jquery.tablesorter.min.js.ダウンロード" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./datas/perfect-scrollbar-0.4.10.with-mousewheel.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/sprintf.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/app.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/highcharts_options.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/graph-operation.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/ResizeSensor.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/jquery-dateFormat.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/xdata.form.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/home.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+        <script type="text/javascript" src="./datas/mainmenu.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/jquery.blockUI.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/jsviews.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/xdata.common.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/xdata.initialize.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/xdata.initialize.blockUI.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/xdata.initialize.jsrender.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/additional.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/split-pane.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/codemirror.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/overlay.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/closetag.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/matchbrackets.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/foldcode.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/foldgutter.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/brace-fold.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/comment-fold.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/xml-fold.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/placeholder.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/simplescrollbars.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/javascript.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/css.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/xml.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/htmlmixed.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/jquery.contextMenu.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/jquery.ui.position.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/policy.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/xdata.emojiareaone.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/xdata.search_form.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/tag.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+<script type="text/javascript" src="./datas/output.min.7329fb12167abc53db66ee1f79af860a25f6e05b.js.ダウンロード"></script>
+            <script src="./datas/500509.js.ダウンロード" charset="UTF-8"></script>
+            <script src="./js/app.js?v=20201222"></script>
+
+<!-- login -->
+    
+
+<div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); position: fixed; background: rgb(187, 222, 251); box-shadow: rgb(114, 114, 114) 0px 1px 3px 0px; width: 42em; height: 32em; display: none; z-index: 100; left: 606px; top: 396px;"><div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); padding: 1em; font-weight: bold; background: rgb(3, 169, 244);"><span style="font-family: sans-serif; font-size: 1.5em; color: rgb(33, 33, 33);">Tab Memory Purge</span><button style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); position: absolute; right: 1em;">x</button></div><div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); padding: 1em; text-align: center;"><div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33);">Tab Memory Purgeで以下のページはマッチングしない:</div><div style="font-family: sans-serif; font-size: 1.5em; color: rgb(33, 33, 33); padding: 2em 0px; overflow-wrap: break-word;" id="_TMP_ADDURL">www.xdata.jp</div><div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33);"><div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33);">実際に追加される文字列はアスタリスクが削除されます。</div><div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33);">追加するパターンを変更するためにスライドを変更することができます。</div></div><div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33);"><span style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33);">Host:<input type="range" style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); position: relative; top: 0.4em;" min="0" max="1"></span><span style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33);">Page:<input type="range" style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); position: relative; top: 0.4em;" min="0" max="5"></span></div></div><div style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); position: absolute; right: 1em; bottom: 1em; text-align: right;"><button style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); width: 50%; margin: 0.16em;">除外リストに追加</button><button style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); width: 50%; margin: 0.16em;">キーバインドの除外リストに追加</button><button style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); width: 50%; margin: 0.16em;">一時的な除外リストに追加</button><br><button style="font-family: sans-serif; font-size: 12px; color: rgb(33, 33, 33); width: 50%; margin: 0.16em;">キャンセル</button></div></div><div class="resize-sensor" style="position: absolute; inset: 0px; overflow: scroll; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: scroll; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; width: 1693px; height: 1113px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: scroll; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; width: 200%; height: 200%"></div></div></div></body></html>

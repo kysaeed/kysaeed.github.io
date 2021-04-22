@@ -1,0 +1,155 @@
+/*
+ * =======================================
+ * チャートタイプの変更
+ * =======================================
+ * type    | spline   折れ線形式
+ *         | column   カラム形式
+ *         | table    表形式
+ *         |
+ * memo    | チャートタイプの変更対象は id=action_graph 固定とする
+ *         |
+ * =======================================
+ *
+ */
+$.fn.swgraph = function(options) {
+
+    /*
+     * チャートタイプのリストを配列に格納
+     */
+    var idList = [];
+    $('.swgraph').each(function() {
+        idList.push($(this).attr('id'));
+    });
+
+    /*
+     * チャートタイプ切り替え
+     */
+    $('.swgraph').on('click', function(e) {
+        e.preventDefault();
+
+        var index = $('.swgraph').index(this);
+        var type = idList[index];
+
+        /*
+         * アイコンの変更
+         */
+        $('.swgraph').removeClass('active'); // すべてのアイコンを非activeにして
+        $('#'+ type).addClass('active');     // 選択されたアイコンをactiveにする
+
+        /*
+         * spline と column の切り替えは highcharts の機能で対応
+         */
+        if( type == 'table' ){
+            $('#action_graph').css('display','none');
+            $('#graph-table').css('display','block');
+        }else{
+            $('#action_graph').css('display','block');
+            $('#graph-table').css('display','none');
+
+            var i;
+            var series_status = [];
+            for(i=0; i<act_chart.series.length; i++) {
+                series_status[i] = act_chart.series[i].visible;
+            }
+
+            /*
+             * highcharts でクリックされたグラフデータの切り替え
+             */
+            $('.gdata').each( function (j) {
+                var name = act_chart.series[j].name;
+                var color = act_chart.series[j].color;
+                act_chart.series[j].update({
+                    name: name, color: color, type: type, visible: true}, false);
+            });
+
+            for(i=0; i<series_status.length; i++) {
+                if( !series_status[i] ) {
+                    act_chart.series[i].hide();
+                }
+            }
+            act_chart.redraw();
+        }
+    });
+    return $(this);
+};
+
+/*
+ * =======================================
+ * チャートに表示しているデータの操作
+ * =======================================
+ *         |
+ * memo    | グラフデータの見だし（legend）をクリックした時に：
+ *         |
+ *         | spline と column
+ *         |     hihgchartsのデータをon | off する
+ *         |
+ *         | table
+ *         |     表に表示しているデータを半透明にする
+ *         |
+ *         | 表示し手いるグラフタイプに関わらず、パイチャートの
+ *         | on | off と 表示する数値を切り替える
+ *         |
+ * 前提条件 | legendのidのvalueは、1からインクリメントした値を
+ *         | セットする。
+ *         | これにより、以下のJSで制御が可能。
+ * =======================================
+ */
+$.fn.gdata = function(options) {
+    $('.gdata').each( function (i, legend) {
+        $('#' + legend.id).on('click', function (e) {
+            e.preventDefault();
+
+            var act_series = act_chart.series[i];
+            var pie_series = pie_chart.series[0];
+
+            /*
+             * パイチャート内に表示している legend の ON | OFF
+             */
+            if(pie_series.data[i].y == 0){
+                pie_series.data[i].update(__piedata[i]);
+            }else{
+                pie_series.data[i].update(0);
+            }
+
+            /*
+             * パイチャートのTitleの再計算
+             * 表示中のlegendの値を全て足し込み
+             */
+            var count = 0;
+            jQuery.each(__piedata, function(i) {
+                count = count + pie_series.data[i].y;
+            });
+
+            /*
+             *パイチャートのTitleにカンマ付きの値セット。
+             */
+            pie_chart.setTitle({ text: String( count ).replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,' ) });
+
+
+            /*
+             * legend および action_graph、graph-table の 選択データの ON | OFF
+             */
+            if (act_series.visible) {
+                act_series.hide();
+                $('#' + legend.id).addClass('active');
+                $('.graph-table .id'+ legend.id).css('opacity','0.2');
+            } else {
+                act_series.show();
+                $('#' + legend.id).removeClass('active');
+                $('.graph-table .id'+ legend.id).css('opacity','1');
+            }
+        });
+    });
+    return $(this);
+};
+
+
+$(function() {
+
+    /* highchartsグラフの初期化 */
+    pie_chart = $('#pie_graph').highcharts();
+    act_chart = $('#action_graph').highcharts();
+
+    $('.swgraph').swgraph();
+    $('.gdata').gdata();
+});

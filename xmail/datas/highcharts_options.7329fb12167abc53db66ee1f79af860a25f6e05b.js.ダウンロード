@@ -1,0 +1,23 @@
+/**
+ * highcharts_options.js
+ *
+ * @author  SHIMOOKA Hideyuki <shimooka@cellant.jp>
+ */
+$(function() {
+    Highcharts.setOptions({
+        colors:[
+          '#34A2E6','#F08966','#55BBA6','#F7B544','#F0A0C7','#84D4F8','#98C63C','#A5BCC8','#A9A635','#DFDFDF',
+          '#C2E8CD','#C8AABA','#DF392A','#0A61BB','#F9F553','#6A9C7A','#735461','#A57A2A','#83D3F7','#999999',
+          '#EB477F','#A086C5','#FCD667','#266C86','#A93058','#91388E','#51A43E','#BE3031','#2E2881','#4D4D4D'
+        ]
+    });
+
+    Highcharts.setOptions({
+        global: {
+            useUTC: false
+        },
+        lang: {
+            thousandsSep: ','
+        }
+    });
+});
