@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8080/vue-ckeditor/assets/bootstrap.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8080/vue-ckeditor/assets/datepicker.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8080/vue-ckeditor/assets/perfect-scrollbar-0.4.10.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8080/vue-ckeditor/assets/app.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" href="http://localhost:8080/vue-ckeditor/assets/home.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+
+        <link rel="shortcut icon" href="https://www.xdata.jp/assets/favicon/favicon.ico">
+        <link rel="icon" type="image/png" href="https://www.xdata.jp/assets/favicon/favicon.png">
+        <link rel="icon" type="image/svg+MXl" href="https://www.xdata.jp/assets/favicon/favicon.svg">
+        <link rel="icon" type="image/png" sizes="192x192" href="https://www.xdata.jp/assets/icons/icon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.xdata.jp/assets/icons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="https://www.xdata.jp/assets/icons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://www.xdata.jp/assets/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://www.xdata.jp/assets/icons/apple-touch-icon-120x120.png">
+        <meta name="msapplication-square310x310logo" content="/assets/icons/icon-310x310.png">
+        <meta name="msapplication-wide310x150logo" content="/assets/icons/icon-310x150.png">
+        <meta name="msapplication-square150x150logo" content="/assets/icons/icon-150x150.png">
+        <meta name="msapplication-square70x70logo" content="/assets/icons/icon-70x70.png">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/split-pane.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/codemirror.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/foldgutter.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/simplescrollbars.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/policy.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/policy-add.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/preset_modal.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/jquery.contextMenu.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/additional.xdata.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/vue-ckeditor/assets/additional.min.7329fb12167abc53db66ee1f79af860a25f6e05b.css">
+
+
+        <meta name="title" content="XD.COMMERCE | コミュニケーション | メールの設定">
+        <title>XD風 | メールの設定</title>
+
+    </head>
+
+
+    <body class="" style="position: relative;">
+        <input type="hidden" id="site_id" value="500372">
+                <div class="navbar navbar-xdata navbar-fixed-top xrossdata" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".burger">
+                        <span class="sr-only">Toggle</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="https://www.xdata.jp/report/home" class="navbar-brand"><img src="http://localhost:8080/vue-ckeditor/assets/xrossdata-logo.png" alt="XD.COMMERCE"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="main-menu an"><a id="mainmenu_analytics" href="https://www.xdata.jp/report/reportAnalysisDashBoard" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;アナリティクス&lt;/span&gt;"></a></li>
+                        <li class="main-menu cm on menu-active"><a id="mainmenu_communication" href="https://www.xdata.jp/report/measurementMail" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;コミュニケーション&lt;/span&gt;"></a></li>
+                        <li class="main-menu fm"><a id="mainmenu_form" href="https://www.xdata.jp/form" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;フォーム&lt;/span&gt;"></a></li>
+                        <li class="main-menu ls"><a id="mainmenu_storage" href="https://www.xdata.jp/report/storage/index" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;ログストレージ&lt;/span&gt;"></a></li>
+                        <li class="main-menu lc"><a id="mainmenu_log" href="https://www.xdata.jp/report/log" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;ログチェック&lt;/span&gt;"></a></li>
+                        <li class="main-menu st"><a id="mainmenu_setting" href="https://www.xdata.jp/report/setting" rel="tooltip" data-placement="bottom" title="" data-original-title="&lt;span class=&#39;text-nowrap&#39;&gt;設定&lt;/span&gt;"></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="login">500372 - 岸川 大輔<br>d-kishikawa@tribeck.jp</li>
+                        <li><a id="bargermenu" href="https://www.xdata.jp/report/measurementMail/output/0000010302/2#" class="icon icon-setting">設定</a>
+                        <div class="panel panel-default menu">
+                            <div class="inner">
+                                <span class="cap"></span>
+                                <a id="bargermenu_password" href="https://www.xdata.jp/report/settingPassword">パスワード設定</a>
+                                <a target="_helpcenter" rel="noopener noreferrer" id="bargermenu_helpcenter" href="https://www.xdata.jp/helpcenter">ヘルプセンター</a>
+                                <hr>
+                                <a id="bargermenu_logout" href="https://www.xdata.jp/report/logout" class="logout">ログアウト</a>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            </div>
+<style type="text/css">
+#condition.panel-body {
+  padding: 0px;
+}
+#modal_popup .modal-footer {
+    margin-top: 15px;
+    padding: 19px 20px 20px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+</style>
+<div id="mail_output">
+<!-- segment-header -->
+    <div class="row-set">
+      <div class="row policy-header policy-setting-header">
+        <div class="col-md-10">
+        <ul>
+          <li class=""><a id="header_segment" href="https://www.xdata.jp/report/measurementMail/segment/0000010302"><span>1</span>セグメントの設定</a></li>
+          <div class="next"></div>
+          <li class="active"><a id="header_message" href="https://www.xdata.jp/report/measurementMail/mail/0000010302"><span>2</span>メールの設定</a></li>
+          <div class="next"></div>
+          <li class=""><a id="header_schedule" href="https://www.xdata.jp/report/measurementMail/schedule/0000010302"><span>3</span>配信スケジュールの設定</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2">
+          <a class="btn btn-primary cancel-btn" href="https://www.xdata.jp/report/measurementMail/list">キャンセル</a>
+        </div>
+      </div>
+    </div>
+
+    <input type="hidden" id="token" value="a68d75d7b6162e647b2654d52d4c6008bf58446004b5e2b358c2150d6ccf509d" />
+    <input type="hidden" id="schedule_id" value="0000010302" />
+    <input type="hidden" id="contents_id" value="2" />
+    <input type="hidden" id="output_type" value="mail" />
+    <input type="hidden" id="mail_template_id" value="" />
+
+<!-- メッセージ -->
+<div class="policy-message">
+  <!-- 成功 -->
+  <div class="panel-body success" style="opacity: 0; display: none;">
+  </div>
+  <!-- エラー -->
+  <div class="panel-body error" style="opacity: 0; display: none;">
+  </div>
+</div>
+
+<div class="split-pane-frame" style="height: 1151px;">
+
+<div class="setting-main editor-height split-pane fixed-left" style="min-width: 1100px;">
+  <div id="app">
+    <xd-mail-editor />
+  </div>
+  <script src="./js/app.js" defer></script>
+</html>
