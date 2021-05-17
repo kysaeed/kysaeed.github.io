@@ -1,0 +1,1 @@
+applyTooltip=function(){$("[rel=tooltip]").length>0&&$("[rel=tooltip]").tooltip({html:!0})},$(document).ready(function(){$(".navbar-xdata .icon-setting").on("click",function(t){$(".navbar-xdata .menu").toggle("fade"),t.stopPropagation()}),applyTooltip()});
