@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>フォーム完了取得のサンプル</title>
+		<style>
+			body {
+				background-color: #e0e0ff;
+			}
+			.form-container {
+				padding: 10px;
+				background-color: white;
+			}
+			.ui input {
+				height: 40px;
+			}
+			.ui button {
+				height: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>フォーム完了取得のサンプル</h1>
+		<div class="form-container">
+			<div id="xhm-form"></div><script type="application/javascript" src="https://form.xdata.jp/form.js?site_id=500372&form_id=487" charset="UTF-8" defer></script>
+		</div>
+
+		<script>
+			// ***** フォーム完了取得のサンプルJS ******************
+			window.xhmFormEvent = function(id, event) {
+				if (event === 'complete') {
+					alert('div: #' + id + 'に表示しているフォームが完了した!')
+				}
+			}
+		</script>
+	</body>
+</html>
